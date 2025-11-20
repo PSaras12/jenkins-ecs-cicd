@@ -1,11 +1,10 @@
 const express = require('express');
 const app = express();
-const port = 3000;
 
 app.get('/', (req, res) => {
-  res.send("Hello AWS ECS Fargate - CI/CD Working!");
+  res.send('Hello from AWS ECS Fargate CI/CD using Jenkins!');
 });
 
-app.listen(port, () => {
-  console.log(`App running on port ${port}`);
+app.listen(3000, () => {
+  console.log("Server running on port 3000");
 });
